@@ -1,0 +1,956 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Montserrat', 'Raleway', Arial, sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*--header--*/
+
+.container {
+	max-width: 1170px;
+	min-width: 320px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.slick-slide img {
+	width: 100%;
+	height: auto;
+}
+
+.slide {
+	position: relative;
+}
+
+.slick-prev {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 60px;
+	z-index: 2;
+	width: 37px;
+	height: 68px;
+	border: none;
+	margin: auto;
+	background-color: transparent;
+	font-size: 0;
+	background-image: url(../images/prev.png);
+	cursor: pointer;
+}
+
+.slick-next {
+	position: absolute;
+	top: 0;
+	right: 60px;
+	bottom: 0;
+	z-index: 2;
+	width: 37px;
+	height: 68px;
+	border: none;
+	margin: auto;
+	font-size: 0;
+	background-color: transparent;
+	background-image: url(../images/next.png);
+	cursor: pointer;
+}
+
+.header__top {
+	position: absolute;
+	right: 0;
+	top: 40px;
+	left: 0;
+	margin: auto;
+	text-align: center;
+}
+
+.header__top__menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__top__menu img{
+	width: auto;
+}
+
+.menuContent {
+	display: flex;
+	width: 640px;
+	justify-content: space-between;
+}
+
+.header__top .mainMenu a {
+	font-weight: 300;
+	color: #fff;
+}
+
+.header__top .mainMenu a:hover {
+	color: #c7b299;
+}
+
+.header__middle {
+	position: absolute;
+	top: 30%;
+	right: 0;
+	left: 0;
+	margin: auto;
+	text-align: center;
+}
+
+.header__middle__slogan {
+	display: flex;
+	justify-content: center;
+}
+
+.slogan {
+	width: 590px;
+	text-align: center;
+}
+
+.slogan h1, h2, p {
+	margin: 0;
+	color: #fff;
+}
+
+.slogan h1 {
+	padding-bottom: 25px;
+	font-size: 52px;
+	font-family: Raleway;
+	font-weight: 800;
+}
+
+.slogan h2 {
+	padding-bottom: 30px;
+	font-size: 36px;
+	font-family: Raleway;
+	font-weight: 500;
+}
+
+.slogan p {
+	padding-bottom: 55px;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.btn {
+	padding-top: 20px;
+	padding-right: 45px;
+	padding-bottom: 20px;
+	padding-left: 45px;
+	font-size: 14px;
+	font-family: Raleway;
+	text-transform: uppercase;
+	font-weight: 800;
+	color: #fff;
+	background-color: #998675;
+	border-radius: 5px;
+}
+
+.btn:hover {
+	background-color: #8d7560;
+	transition: .3s;
+}
+
+.slick-dots {
+	bottom: 40px;
+}
+
+.slick-dots li {
+	width: 18px;
+	height: 21px;
+	margin: 0 4px;
+}
+
+.slick-dots li button:before {
+	font-size: 50px;
+	color: #9a9a9a;
+	line-height: 14px;
+	opacity: .55;
+}
+
+.slick-dots li.slick-active button:before
+{
+	width: 15px;
+	height: 15px;
+	margin-left: 3px;
+	background-image: url(../images/slideBtn.png);
+	color: transparent;
+}
+
+/*--content--*/
+
+.services {
+	display: flex;
+	padding-top: 90px;
+	padding-bottom: 85px;
+	justify-content: space-between;
+	align-items: baseline;
+	text-align: center;
+}
+
+.services h3 {
+	padding-top: 30px
+	padding-bottom: 25px;
+	font-size: 22px;
+	font-family: Raleway;
+	font-weight: 600;
+	color: #555555;
+}
+
+.services p {
+	font-size: 14px;
+	font-weight: 300;
+	color: #ababab;
+}
+
+.design,
+.development,
+.customization,
+.marketing {
+	width: 20%;
+	cursor: pointer;
+}
+
+.line {
+	width: 70px;
+	height: 3px;
+	margin: 0 auto;
+	margin-top: 30px;
+	background-color: #f1eee9;
+}
+
+.design:hover h3,
+.development:hover h3,
+.customization:hover h3,
+.marketing:hover h3 {
+	color: #c7b299;
+}
+
+.design:hover .line,
+.development:hover .line,
+.customization:hover .line,
+.marketing:hover .line {
+	background-color: #c7b299;
+}
+
+		/*--title--*/
+
+.title {
+	max-width: 760px;
+	min-width: 320px;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.title h3 {
+	margin: 0;
+	padding-bottom: 30px;
+	font-size: 30px;
+	font-family: Raleway;
+	font-weight: 600;
+	color: #555555;
+}
+
+.title p {
+	padding-bottom: 55px;
+	font-size: 16px;
+	font-weight: 300;
+	color: #8c8c8c;
+}
+
+.categories {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.categories a {
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #8c8c8c;
+
+	border: 1px solid #ebebeb;
+	border-radius: 5px;
+}
+
+.categories a:hover {
+	background-color: #998675;
+	color: #fff;
+	transition: .2s;
+}
+
+		/*--projects--*/
+
+.projects {
+	display: flex;
+	padding-bottom: 40px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.projects__item {
+	width: 360px;
+	margin-bottom: 30px;
+}
+
+.projects__item img {
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+}
+
+.projects__item h3 {
+	margin: 0;
+	padding-bottom: 15px;
+	padding-left: 30px;
+	font-size: 20px;
+	font-family: Raleway;
+	font-weight: 500;
+	color: #c7b299;
+}
+
+.projects__item p {
+	padding-bottom: 30px;
+	padding-left: 30px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #d1d1d1;
+}
+
+.projects__item:hover,
+.projects__item:hover h3 {
+	color: #fff;
+	background-color: #362f2d;
+}
+
+.projects__item:hover p {
+	color: #c7b299;
+}
+
+.projects-btn {
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+	/*--phone-block--*/
+
+.mob-device {
+	display: flex;
+	padding-bottom: 70px;
+}
+
+.phone-block {
+	padding-right: 30px;
+}
+
+.text-block h3 {
+	margin: 0;
+	padding-top: 120px;
+	padding-bottom: 40px;
+	font-size: 30px;
+	font-family: Raleway;
+	font-weight: 600;
+	color: #555555;
+}
+
+.text-block p {
+	padding-bottom: 50px;
+	font-size: 16px;
+	font-weight: 300;
+	color: #8c8c8c;
+}
+
+.text-block ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.text-block li:before {
+	content: " ";
+	display: inline-block;
+	padding-right: 30px;
+	margin-left: 50px;
+	height: 21px;
+	width: 21px;
+	background-image: url(../images/arrow.png);
+	vertical-align: middle;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+.text-block li {
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-weight: 300;
+	color: #8c8c8c;
+}
+
+.text-block li:hover {
+	color: #c7b299;
+	cursor: pointer;
+}
+
+	/*--Recent Title--*/
+
+.recent__title {
+	max-width: 770px;
+	min-width: 320px;
+	margin: auto;
+	text-align: center;
+}
+
+.recent__title h3 {
+	margin: 0;
+	padding-bottom: 30px;
+	font-size: 30px;
+	font-family: Raleway;
+	font-weight: 600;
+	color: #555555;
+}
+
+.recent__title p {
+	padding-bottom: 40px;
+	font-size: 16px;
+	font-weight: 300;
+	color: #8c8c8c;
+}
+
+	/*--Recent Posts--*/
+
+.recent__posts {
+	display: flex;
+	padding-bottom: 120px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.recent__posts__item {
+	width: 360px;
+	padding-bottom: 33px;
+}
+
+.recent__posts__item img {
+	width: 100%;
+	height: auto;
+	padding-bottom: 30px;
+}
+
+.recent__posts__item h3 {
+	margin: 0;
+	padding-bottom: 25px;
+	padding-left: 30px;
+	font-size: 20px;
+	font-family: Raleway;
+	font-weight: 500;
+	color: #c7b299;
+}
+
+.recent__posts__item p {
+	padding-bottom: 30px;
+	padding-left: 30px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #d1d1d1;
+}
+
+.recent__posts__item a {
+	margin-left: 30px;
+	font-size: 14px;
+	font-weight: 300;
+	color: #c7b299;
+}
+
+.recent__posts__item a:after {
+	content: " ";
+	display: inline-block;
+	margin-left: 10px;
+	height: 8px;
+	width: 5px;
+	background-image: url(../images/PostArrow.png);
+}
+
+.recent__posts__item:hover,
+.recent__posts__item:hover h3 {
+	color: #837567;
+	background-color: #362f2d;
+}
+
+.recent__posts__item:hover p {
+	color: #fff;
+}
+
+.recent__posts__item a:hover {
+	color: #fff;
+}
+
+/*--footer--*/
+
+.footer {
+	background-color: #191919;
+}
+
+.footer-content {
+	display: flex;
+	padding-top: 80px;
+	padding-bottom: 80px;
+}
+
+.about-wacom,
+.recent-posts,
+.our-twitter,
+.dribbble-widget {
+	width: 25%;
+	padding-right: 30px;
+}
+
+.dribbble-widget {
+	padding-right: 0;
+}
+
+.footer-content p {
+	font-size: 14px;
+	font-weight: 300;
+	color: #555;
+}
+
+.footer-content h3 {
+	margin: 0;
+	padding-bottom: 30px;
+	font-size: 24px;
+	font-family: Raleway;
+	font-weight: 700;
+	color: #fff;
+}
+
+.footer-content h4 {
+	margin: 0;
+	font-size: 12px;
+	font-weight: 300;
+	color: #363636;
+}
+
+	/*--about-wacom--*/
+
+.about-wacom img {
+	padding-bottom: 30px;
+}
+
+.about-wacom p {
+	padding-bottom: 35px;
+}
+
+.about-wacom a {
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.about-wacom a:hover {
+	color: #c7b299;
+}
+
+.about-wacom a:after {
+	content: " ";
+	display: inline-block;
+	margin-left: 10px;
+	height: 8px;
+	width: 5px;
+	background-image: url(../images/postArrow.png);
+}
+
+	/*--post--*/
+
+.post {
+	padding-top: 20px;
+	border-bottom: 1px solid #252525;
+}
+
+.post:nth-child(2) {
+	padding-top: 0;
+}
+
+.post:last-child {
+	border-bottom: none;
+}
+
+.post:hover h4 {
+	color: #fff;
+}
+
+.post:hover p {
+	color: #c7b299;
+}
+
+.post h4 {
+	padding-bottom: 15px;
+}
+
+.post p {
+	padding-bottom: 25px;
+}
+
+	/*--tweet--*/
+
+.tweet {
+	padding-top: 20px;
+	border-bottom: 1px solid #252525;
+}
+
+.tweet:nth-child(2) {
+	padding-top: 0;
+}
+
+.tweet:last-child {
+	border-bottom: none;
+}
+
+.tweet:hover h4 {
+	color: #fff;
+}
+
+.tweet:hover p {
+	color: #c7b299;
+}
+
+.tweet p {
+	padding-bottom: 15px;
+}
+
+.tweet h4 {
+	padding-bottom: 25px;
+}
+
+.tweet a {
+	color: #02b4e4;
+}
+
+.tweet:last-child a {
+	color: #959595;
+}
+
+	/*--dribble-widget--*/
+
+.dribbble-widget img:hover {
+	transition: ease-in-out .5s;
+	transform: scale(1.3, 1.3);
+}
+
+/*--footer-cp--*/
+
+.footer-cp {
+	background-color: #111;
+}
+
+.copyright {
+	display: flex;
+	padding-top: 45px;
+	padding-bottom: 55px;
+	justify-content: space-between;
+}
+
+.copyright a {
+	padding-right: 10px;
+}
+
+.copyright a:after {
+	content: "|";
+	padding-left: 10px;
+}
+
+.copyright a:hover:after {
+	color: #555;
+}
+
+.copyright a:last-child:after {
+	content: "";
+}
+
+.copyright span {
+	color: #959595;
+}
+
+.l-block,
+.r-block {
+	font-size: 13px;
+	font-weight: 300;
+	color: #555;
+}
+
+.l-block a,
+.r-block a {
+	color: #555;
+}
+
+.l-block a:hover,
+.r-block a:hover {
+	color: #c7b299;
+}
+
+
+/*---------- 992 -------------*/
+
+@media screen and (max-width: 992px) {
+
+.header__top .logo {
+	margin-left: 60px;
+}
+
+.menuContent {
+	width: 445px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.menuContent a {
+	padding-right: 30px;
+	font-size: 16px;
+}
+
+.menuContent a:nth-of-type(1) {
+	padding-bottom: 10px;
+}
+
+.header__middle {
+	top: 35%;
+}
+
+.slogan h2 {
+	padding-bottom: 10px;
+	font-size: 20px;
+}
+
+.slogan h1 {
+	padding-bottom: 15px;
+	font-size: 25px;
+}
+
+.slogan p {
+	padding-bottom: 25px;
+}
+
+.slogan .btn {
+	padding-top: 10px;
+	padding-right: 25px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	font-size: 12px;
+}
+
+.header__bottom {
+	bottom: 10px;
+}
+
+.projects {
+	justify-content: space-evenly;
+}
+
+.text-block h3 {
+	padding-top: 0;
+}
+
+.recent__posts {
+	padding-bottom: 0;
+	justify-content: space-evenly;
+}
+
+.recent__posts__item {
+	margin-bottom: 30px;
+}
+
+.dribbble-widget {
+	text-align: center;
+}
+
+.about-wacom img {
+	width: 95%;
+}
+}
+
+/*---------- 768 -------------*/
+
+@media screen and (max-width: 768px) {
+
+.toggleMobMenu {
+	position: absolute;
+	right: 70px;
+	width: 40px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
+.toggleMobMenu span {
+	display: block;
+	height: 2px;
+	margin-bottom: 6px;
+	background-color: #fff;
+}
+
+.toggleMobMenu:last-child {
+	margin-bottom: 0;
+}
+
+.menuContent {
+	position: absolute;
+	top: 100%;
+	right: 0;
+	left: 0;
+	z-index: 2;
+	display: flex;
+	width: 100%;
+	padding-top: 28px;
+	padding-bottom: 30px;
+	flex-direction: column;
+	border-top: 1px solid rgba(255,255,255,.8);
+	background-color: rgba(0,0,0,.9);	
+}
+
+.menuContent a {
+	padding-bottom: 10px;
+}
+
+.services h3 {
+	font-size: 16px;
+}
+
+.title h3 {
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+
+.projects {
+	padding-bottom: 10px;
+}
+
+.mob-device {
+	padding-bottom: 35px;
+	flex-wrap: wrap;
+}
+
+.phone-block {
+	padding-right: 0;
+	text-align: right;
+}
+
+.phone-block img {
+	width: 70%;
+}
+
+.text-block li {
+	margin-bottom: 10px;
+	font-size: 14px;
+}
+
+.text-block li:before {
+	margin-left: 0;
+}
+
+.text-block h3 {
+	padding-top: 10px;
+	padding-bottom: 15px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.text-block p {
+	padding-bottom: 20px;
+	font-size: 14px;
+	text-align: justify;
+}
+
+.recent__title h3 {
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+
+.about-wacom img {
+	width: 90%;
+}
+.menuContent {
+	height: 200px;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.menuContent a {
+	padding-right: 0;
+}
+
+.footer-content {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+}
+
+/*---------- 576 -------------*/
+
+@media screen and (max-width: 576px) {
+
+.header__top {
+	top: 15px;
+}
+
+.header__top__menu img {
+	width: 30%;
+}
+
+.header__middle {
+	top: 30%;
+}
+
+.slogan {
+	width: 75%;
+}
+
+.slogan h2 {
+	padding-bottom: 10px;
+	font-size: 15px
+}
+
+.slogan h1 {
+	padding-bottom: 15px;
+	font-size: 20px
+}
+
+.slogan p {
+	padding-bottom: 20px;
+	font-size: 12px;
+}
+
+.slogan .btn {
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 10px;
+}
+
+.services {
+	padding-top: 40px;
+}
+
+.categories a {
+	padding-right: 15px;
+	padding-left: 15px;
+	font-size: 12px;
+}
+
+.footer-content {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.footer-content h3 {
+	padding-bottom: 15px;
+	font-size: 20px;
+}
+}
